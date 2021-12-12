@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Женская одежда бренда Furly">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Manrope_regular.woff2" as="font">
+    <link rel="preload" href="fonts/Manrope_regular.woff" as="font">
+    <title>Furly | Женская одежда</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation navigation container">
+        <a class="navigation__logo" href="index.html">
+          <img class="navigation__image" src="" width="90" height="36" alt="Логотип женской одежды бренда Furly">
+        </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Новинки</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Бестселлеры</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Одежда</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Обувь</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Аксессуары</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--entrance" href="#" aria-label="Авторизация пользователя"></a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--favorite" href="#" aria-label="Понравившиеся товары"></a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--card" href="#" aria-label="Корзина товаров"></a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="main__content">
+        <h1 class="main__content-title">Женская одежда</h1>
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтры</h2>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__label" for="category">Категория</label>
+              <select class="filter__select" name="category-list" id="category">
+                <option class="filter__option" value="All">Все</option>
+              </select>
+            </li>
+            <li class="filter__item">
+              <label class="filter__label" for="brand">Бренд</label>
+              <select class="filter__select" name="brand-list" id="brand">
+                <option class="filter__option" value="All">Все</option>
+              </select>
+            </li>
+            <li class="filter__item">
+              <label class="filter__label" for="collection">Коллекция</label>
+              <select class="filter__select" name="collection-list" id="collection">
+                <option class="filter__option" value="All">Все</option>
+              </select>
+            </li>
+            <li class="filter__item">
+              <label class="filter__label" for="sort-by">Сортировать по:</label>
+              <select class="filter__select" name="sort-by-list" id="sort-by">
+                <option class="filter__option" value="popularity">Популярности</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <h3 class="catalog__title">Платье Spring</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Платье Spring">
+              </picture>
+              <p class="catalog__price">4 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось платье Spring"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Костюм Beige</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Костюм Beige">
+              </picture>
+              <p class="catalog__price">8 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравился костюм Beige"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Джинсовое платье Pink</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Джинсовое платье Pink">
+              </picture>
+              <p class="catalog__price">6 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось джинсовое платье Pink"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Худи Beige</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Худи Beige">
+              </picture>
+              <p class="catalog__price">3 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилась худи Beige"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Худи Sand</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Худи Sand">
+              </picture>
+              <p class="catalog__price">3 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилась худи Sand"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Платье-комбинация Black</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Платье-комбинация Black">
+              </picture>
+              <p class="catalog__price">6 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось платье-комбинация Black"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Тренч Sad Autumn</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Тренч Sad Autumn">
+              </picture>
+              <p class="catalog__price">12 000 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравился тренч Sad Autumn"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Костюм Grey</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Костюм Grey">
+              </picture>
+              <p class="catalog__price">8 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравился костюм Grey"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Платье Ornament</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Платье Ornament">
+              </picture>
+              <p class="catalog__price">4 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось платье Ornament"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Пальто Thunder</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Пальто Thunder">
+              </picture>
+              <p class="catalog__price">10 000 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось пальто Thunder"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Пиджак Duon</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Пиджак Duon">
+              </picture>
+              <p class="catalog__price">7 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравился пиджак Duon"></button>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__title">Пальто Flax</h3>
+              <picture class="catalog__picture">
+                <img class="catalog__image" src="" width="320" height="408" alt="Пальто Flax">
+              </picture>
+              <p class="catalog__price">13 500 ₽</p>
+              <button class="catalog__button" type="button" aria-label="Понравилось пальто Flax"></button>
+            </li>
+          </ul>
+          <button class="catalog__more" type="button">Загрузить еще</button>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__wrapper container">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__image" src="" width="90" height="36" alt="Логотип женской одежды бренда Furly">
+        </a>
+
+        <p class="footer__copyright">Furly © 2021 Все права защищены</p>
+        <a class="footer__confidentiality" href="#" tagret="_blank">Политика конфиденциальности</a>
+
+        <address class="footer__address">
+          <a class="footer__number" href="tel:5349585555">534-958-5555</a>
+          <a class="footer__email" href="mailto:info@furly.com">info@furly.com</a>
+        </address>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" target="_blank" aria-label="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" target="_blank" aria-label="Twitter"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#" target="_blank" aria-label="Instagram"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#" target="_blank" aria-label="Pinterest"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="user-panel">
+          <ul class="user-panel__list">
+            <li class="user-panel__item"><a class="user-panel__link" href="#">Оплата и доставка</a></li>
+            <li class="user-panel__item"><a class="user-panel__link" href="#">Возврат</a></li>
+            <li class="user-panel__item"><a class="user-panel__link" href="#">Отследить заказ</a></li>
+          </ul>
+        </div>
+
+        <div class="feedback">
+          <label class="feedback__label" for="email">Подпишитесь на нашу рассылку</label>
+          <input class="feedback__input" type="text" name="email-input" id="email" placeholder="example@email.com">
+          <button class="feedback__button" type="button" aria-label="Подписаться"></button>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
