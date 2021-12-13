@@ -1,0 +1,57 @@
+.feedback {
+	grid-column: 4 / 5;
+	grid-row: 1 / -1;
+}
+
+.feedback__label {
+	display: block;
+	margin-bottom: 37px;
+}
+
+.feedback__describe {
+	position: relative;
+}
+
+.feedback__input {
+	padding: 11px 30px 11px 0;
+	background: transparent;
+	color: $secondary-color;
+	font-size: inherit;
+	border: 0;
+	border-bottom: 1px solid $feedback-line;
+	width: 100%;
+
+	&::placeholder {
+		color: $secondary-color;
+	}
+}
+
+
+.feedback__button {
+	display: block;
+	width: 26px;
+	height: 41px;
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 14px;
+		left: 0;
+		width: 26px;
+		height: 12px;
+		background-image: url("../img/arrow-right.svg");
+		background-size: 26px 12px;
+		background-repeat: no-repeat;
+	}
+
+	&:focus,
+	&:active {
+		outline: 1px solid black;
+	}
+}
