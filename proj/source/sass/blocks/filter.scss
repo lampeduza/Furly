@@ -1,0 +1,45 @@
+.filter {
+	grid-column: 1 / -1;
+	margin-bottom: 60px;
+}
+
+.filter__list {
+	@include reset-list;
+	display: grid;
+	grid-template-columns: repeat(4, calc(25% - 15px));
+	grid-column-gap: 20px;
+}
+
+.filter__item {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 65px;
+		right: 5px;
+		background-image: url("../img/arrow.svg");
+		background-repeat: no-repeat;
+		background-size: 12px 8px;
+		width: 12px;
+		height: 8px;
+		pointer-events: none;
+	}
+}
+
+.filter__label {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.filter__select {
+	width: 100%;
+	color: $secondary-color;
+	font-family: inherit;
+	padding: 10px 5px 10px 0;
+	border: none;
+	border-bottom: 1px solid $border-bottom-color;
+	background-color: transparent;
+	appearance: none;
+	cursor: pointer;
+}

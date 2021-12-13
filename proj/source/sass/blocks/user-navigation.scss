@@ -1,0 +1,47 @@
+.user-navigation {
+	@include reset-list;
+	justify-self: end;
+	display: flex;
+}
+
+.user-navigation__item {
+	margin-right: 25px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.user-navigation__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 26px;
+	height: 26px;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-repeat: no-repeat;
+		height: 18px;
+	}
+
+	&--entrance::before {
+		width: 16px;
+		background-image: url("../img/entrance.svg");
+		background-size: 16px 18px;
+	}
+
+	&--favorite::before {
+		width: 20px;
+		background-image: url("../img/favorite.svg");
+		background-size: 20px 18px;
+	}
+
+	&--card::before {
+		width: 18px;
+		background-image: url("../img/card.svg");
+		background-size: 18px 18px;
+	}
+}

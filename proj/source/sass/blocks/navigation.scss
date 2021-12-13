@@ -1,0 +1,27 @@
+.navigation {
+	display: grid;
+	grid-template-columns: 90px 1fr auto;
+	align-items: center;
+	grid-column-gap: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.navigation__logo {
+	justify-self: start;
+}
+
+.navigation__list {
+	justify-self: center;
+	@include reset-list;
+	display: flex;
+}
+
+.navigation__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.navigation__link {
+	color: inherit;
+	font-weight: $medium;
+}
