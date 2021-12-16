@@ -18,8 +18,12 @@
 	display: flex;
 }
 
-.navigation__item:not(:last-child) {
+.navigation__item {
 	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .navigation__link {
