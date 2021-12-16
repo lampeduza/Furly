@@ -3,3 +3,17 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+/* desktop s */
+@media (max-width: $desktop-width-s) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* desktop s */
+@media (max-width: $tablet-width) {
+  .container {
+    padding: 0 25px;
+  }
+}

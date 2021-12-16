@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: 90px 1fr auto;
 	align-items: center;
-	grid-column-gap: 60px;
+	grid-column-gap: 25px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -16,6 +16,7 @@
 	justify-self: center;
 	@include reset-list;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .navigation__item {
@@ -29,4 +30,31 @@
 .navigation__link {
 	color: inherit;
 	font-weight: $medium;
+}
+
+@media (max-width: $desktop-width-s) {
+	.navigation {
+		grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 25px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .navigation__logo {
+  	width: auto;
+  	justify-self: auto;
+  	grid-column: 1 / -1;
+  	grid-row: 1 / 2;
+  }
+
+  .navigation__list {
+  	justify-self: auto;
+  	grid-column: 1 / 2;
+  	grid-row: 2 / -1;
+  }
+
+  .navigation__item {
+  	margin-right: 20px;
+  }
 }

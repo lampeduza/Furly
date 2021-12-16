@@ -6,7 +6,7 @@
 
 .footer__wrapper {
 	display: grid;
-	grid-template-columns: 27.32% 20.82% 21.27% 26.12%;
+	grid-template-columns: 27.314% auto auto 26.12%;
 	grid-template-rows: repeat(3, auto);
 	grid-column-gap: 20px;
 }
@@ -48,4 +48,17 @@
 
 .footer__number {
 	margin-bottom: 20px;
+}
+
+@media (max-width: $desktop-width-s) {
+	.footer {
+		padding: 50px 0;
+	}
+
+	.footer__wrapper {
+		grid-template-columns: 1fr auto auto;
+		grid-template-rows: repeat(4, auto);
+		justify-content: space-between;
+		column-gap: 40px;
+	}
 }

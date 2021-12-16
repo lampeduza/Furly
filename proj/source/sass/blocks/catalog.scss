@@ -77,5 +77,18 @@
 	padding: 28px;
 	width: 24.18%;
 	font-weight: $medium;
+}
 
+@media (max-width: $desktop-width-m) {
+	.catalog {
+		padding-bottom: 50px;
+	}
+
+	.catalog__list {
+		margin-bottom: 70px;
+	}
+
+	.catalog__more {
+		padding: 20px 10px;
+	}
 }

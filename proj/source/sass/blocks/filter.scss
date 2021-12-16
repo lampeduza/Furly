@@ -43,3 +43,25 @@
 	appearance: none;
 	cursor: pointer;
 }
+
+/* desktop s */
+@media (max-width: $desktop-width-s) {
+	.filter {
+		margin-bottom: 50px;
+	}
+
+	.filter__item {
+		&::after {
+			top: 55px;
+		}
+	}
+
+	.filter__label,
+	.filter__select {
+		font-size: 15px;
+	}
+
+	.filter__label {
+		margin-bottom: 20px;
+	}
+}

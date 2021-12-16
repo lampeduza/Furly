@@ -1,18 +1,18 @@
-.feedback {
+.subscribe {
 	grid-column: 4 / 5;
 	grid-row: 1 / -1;
 }
 
-.feedback__label {
+.subscribe__label {
 	display: block;
 	margin-bottom: 37px;
 }
 
-.feedback__describe {
+.subscribe__container {
 	position: relative;
 }
 
-.feedback__input {
+.subscribe__input {
 	padding: 11px 30px 11px 0;
 	background: transparent;
 	color: $secondary-color;
@@ -26,7 +26,7 @@
 	}
 }
 
-.feedback__button {
+.subscribe__button {
 	display: block;
 	width: 26px;
 	height: 41px;
@@ -52,5 +52,34 @@
 	&:focus,
 	&:active {
 		outline: 1px solid black;
+	}
+}
+
+@media (max-width: $desktop-width-s) {
+	.subscribe {
+		grid-column: 1 / 2;
+		grid-row: 4 / -1;
+		margin-top: 40px;
+	}
+
+	.subscribe__label {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+
+	.subscribe__input {
+		font-size: 18px;
+		padding: 11px 40px 11px 15px;
+	}
+
+	.subscribe__button {
+		width: 35px;
+
+		&::after {
+			width: 30px;
+			height: 15px;
+			background-size: 30px 15px;
+			left: 2px;
+		}
 	}
 }
