@@ -58,3 +58,9 @@
   	margin-right: 20px;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width-xs) {
+	.navigation {
+		padding-bottom: 30px;
+	}
+}

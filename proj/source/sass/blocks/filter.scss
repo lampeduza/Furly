@@ -1,5 +1,4 @@
 .filter {
-	grid-column: 1 / -1;
 	margin-bottom: 60px;
 }
 
@@ -44,24 +43,40 @@
 	cursor: pointer;
 }
 
-/* desktop s */
-@media (max-width: $desktop-width-s) {
+@media (min-width: $tablet-width-xs) and (max-width: $tablet-width) {
 	.filter {
 		margin-bottom: 50px;
+	}
+	
+	.filter__list {
+		grid-template-columns: repeat(2, calc(50% - 10px));
+		grid-row-gap: 35px;
 	}
 
 	.filter__item {
 		&::after {
-			top: 55px;
+			top: 52px;
 		}
 	}
 
-	.filter__label,
-	.filter__select {
-		font-size: 15px;
+	.filter__label {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width-xs) {
+	.filter__list {
+		grid-template-columns: auto;
+		grid-row-gap: 20px;
+	}
+
+	.filter__item {
+		&::after {
+			top: 46px;
+		}
 	}
 
 	.filter__label {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 }
